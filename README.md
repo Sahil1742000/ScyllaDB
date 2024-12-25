@@ -1,4 +1,4 @@
-n
+
 # Terraform Module CI/CD Documentation
 
 ## Table of Contents
@@ -42,48 +42,30 @@ This documentation explains the concept of Terraform Module CI/CD, why it's impo
 
 ---
 
-## Why Terraform Module CI/CD?
 
-### 1. **Modularization for Reusability**:
-   - Terraform modules allow for reusable pieces of code that can be applied across multiple projects. CI/CD ensures these modules are always validated and deployed correctly.
 
-### 2. **Consistency Across Environments**:
-   - CI/CD ensures that infrastructure configurations are consistent across all environments, minimizing configuration drift.
-
-### 3. **Increased Collaboration**:
-   - Terraform modules promote collaboration by allowing different teams to work on independent infrastructure components, with changes automatically integrated and validated.
-
-### 4. **Early Detection of Errors**:
-   - Automated testing and validation catch errors early in the development lifecycle, reducing the chances of issues in production environments.
-
-### 5. **Fast Feedback and Safe Infrastructure Changes**:
-   - CI/CD pipelines allow for rapid feedback on code changes, making sure that infrastructure updates are deployed quickly and safely.
-
-### 6. **Versioning and Rollback**:
-   - Storing Terraform modules in version-controlled repositories and using CI/CD pipelines allows for robust versioning, making it easy to roll back to previous versions if necessary.
+| **Why Terraform Module CI/CD?**             | **Description**                                                                                       |
+|---------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **1. Modularization for Reusability**      | Terraform modules allow for reusable pieces of code that can be applied across multiple projects. CI/CD ensures these modules are always validated and deployed correctly. |
+| **2. Consistency Across Environments**     | CI/CD ensures that infrastructure configurations are consistent across all environments, minimizing configuration drift. |
+| **3. Increased Collaboration**             | Terraform modules promote collaboration by allowing different teams to work on independent infrastructure components, with changes automatically integrated and validated. |
+| **4. Early Detection of Errors**           | Automated testing and validation catch errors early in the development lifecycle, reducing the chances of issues in production environments. |
+| **5. Fast Feedback and Safe Infrastructure Changes** | CI/CD pipelines allow for rapid feedback on code changes, making sure that infrastructure updates are deployed quickly and safely. |
+| **6. Versioning and Rollback**             | Storing Terraform modules in version-controlled repositories and using CI/CD pipelines allows for robust versioning, making it easy to roll back to previous versions if necessary. |
 
 ---
 
-## When to Use Terraform Module CI/CD?
 
-### 1. **Frequent Changes to Infrastructure**:
-   - When your team is constantly making changes to cloud infrastructure, CI/CD ensures these changes are automatically tested, validated, and deployed.
 
-### 2. **Managing Infrastructure at Scale**:
-   - CI/CD is particularly useful when managing large-scale infrastructure with many services, ensuring that module updates are properly handled.
-
-### 3. **Multiple Environments**:
-   - Terraform module CI/CD ensures consistency across dev, staging, and production environments, preventing environment drift.
-
-### 4. **Collaboration Across Teams**:
-   - Terraform modules allow teams to work independently on different parts of infrastructure, while CI/CD ensures that the changes are tested and integrated properly.
-
-### 5. **Cloud Infrastructure and Automation**:
-   - When using Terraform to manage cloud infrastructure (AWS, GCP, Azure), integrating CI/CD helps automate the lifecycle of these resources.
-
+| **When to Use**                        | **Description**                                                                                       |
+|----------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **1. Frequent Changes to Infrastructure** | When your team is constantly making changes to cloud infrastructure, CI/CD ensures these changes are automatically tested, validated, and deployed. |
+| **2. Managing Infrastructure at Scale** | CI/CD is particularly useful when managing large-scale infrastructure with many services, ensuring that module updates are properly handled. |
+| **3. Multiple Environments**           | Terraform module CI/CD ensures consistency across dev, staging, and production environments, preventing environment drift. |
+| **4. Collaboration Across Teams**      | Terraform modules allow teams to work independently on different parts of infrastructure, while CI/CD ensures that the changes are tested and integrated properly. |
+| **5. Cloud Infrastructure and Automation** | When using Terraform to manage cloud infrastructure (AWS, GCP, Azure), integrating CI/CD helps automate the lifecycle of these resources. |
 ---
 
-Here's the content converted into a tabular form:
 
 | **Advantage**                        | **Description**                                                                                       |
 |--------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -95,7 +77,7 @@ Here's the content converted into a tabular form:
 | **6. Flexibility with Environments** | Terraform modules can be applied across various environments with CI/CD pipelines, ensuring that the infrastructure changes are customized for each environment (e.g., different instance sizes for staging vs production). |
 ---
 
-Here’s the content converted into a tabular form:
+
 
 | **Disadvantage**                          | **Description**                                                                                       |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -106,7 +88,7 @@ Here’s the content converted into a tabular form:
 | **5. Potential for Deployment Failures** | While CI/CD automates the process, mistakes in the approval process or configuration can still lead to unwanted deployments or failures. |
 ---
 
-Here’s the content converted into a tabular form:
+
 
 | **Best Practice**                        | **Description**                                                                                       |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------|
