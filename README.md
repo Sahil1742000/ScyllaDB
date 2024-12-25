@@ -83,67 +83,39 @@ This documentation explains the concept of Terraform Module CI/CD, why it's impo
 
 ---
 
-## Advantages of Terraform Module CI/CD
+Here's the content converted into a tabular form:
 
-### 1. **Consistency and Repeatability**:
-   - Terraform modules ensure consistent configurations, and CI/CD pipelines automate the process, ensuring that infrastructure is applied consistently across environments.
-
-### 2. **Reduced Risk of Errors**:
-   - Automated testing and validation catch errors early, reducing the risk of misconfigurations or mistakes in production.
-
-### 3. **Faster Development and Deployment**:
-   - With CI/CD, Terraform modules are tested, validated, and deployed automatically, accelerating the speed of infrastructure deployment.
-
-### 4. **Version Control**:
-   - Using version control systems ensures that changes to Terraform modules are tracked, providing history and the ability to roll back if necessary.
-
-### 5. **Collaboration and Team Alignment**:
-   - CI/CD ensures that multiple teams can collaborate effectively by making infrastructure changes in an organized and automated way.
-
-### 6. **Flexibility with Environments**:
-   - Terraform modules can be applied across various environments with CI/CD pipelines, ensuring that the infrastructure changes are customized for each environment (e.g., different instance sizes for staging vs production).
-
+| **Advantage**                        | **Description**                                                                                       |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **1. Consistency and Repeatability** | Terraform modules ensure consistent configurations, and CI/CD pipelines automate the process, ensuring that infrastructure is applied consistently across environments. |
+| **2. Reduced Risk of Errors**       | Automated testing and validation catch errors early, reducing the risk of misconfigurations or mistakes in production. |
+| **3. Faster Development and Deployment** | With CI/CD, Terraform modules are tested, validated, and deployed automatically, accelerating the speed of infrastructure deployment. |
+| **4. Version Control**              | Using version control systems ensures that changes to Terraform modules are tracked, providing history and the ability to roll back if necessary. |
+| **5. Collaboration and Team Alignment** | CI/CD ensures that multiple teams can collaborate effectively by making infrastructure changes in an organized and automated way. |
+| **6. Flexibility with Environments** | Terraform modules can be applied across various environments with CI/CD pipelines, ensuring that the infrastructure changes are customized for each environment (e.g., different instance sizes for staging vs production). |
 ---
 
-## Disadvantages of Terraform Module CI/CD
+Here’s the content converted into a tabular form:
 
-### 1. **Complexity in Setup**:
-   - Setting up CI/CD for Terraform modules requires integration with version control, CI/CD tools (e.g., Jenkins, GitLab CI), and state management. This may present a learning curve for those unfamiliar with these tools.
-
-### 2. **State Management**:
-   - Proper state management is crucial in Terraform. If state files are not handled correctly in the pipeline, it could lead to issues like race conditions or inconsistent infrastructure.
-
-### 3. **Performance Issues**:
-   - As the infrastructure grows, the CI/CD pipeline execution time (e.g., `terraform plan` and `terraform apply`) could increase, especially with larger Terraform configurations or more extensive infrastructure.
-
-### 4. **Security and Secrets Management**:
-   - Storing sensitive information like cloud credentials in CI/CD pipelines must be done securely, and improper handling can lead to security vulnerabilities.
-
-### 5. **Potential for Deployment Failures**:
-   - While CI/CD automates the process, mistakes in the approval process or configuration can still lead to unwanted deployments or failures.
-
+| **Disadvantage**                          | **Description**                                                                                       |
+|-------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **1. Complexity in Setup**               | Setting up CI/CD for Terraform modules requires integration with version control, CI/CD tools (e.g., Jenkins, GitLab CI), and state management. This may present a learning curve for those unfamiliar with these tools. |
+| **2. State Management**                  | Proper state management is crucial in Terraform. If state files are not handled correctly in the pipeline, it could lead to issues like race conditions or inconsistent infrastructure. |
+| **3. Performance Issues**                | As the infrastructure grows, the CI/CD pipeline execution time (e.g., `terraform plan` and `terraform apply`) could increase, especially with larger Terraform configurations or more extensive infrastructure. |
+| **4. Security and Secrets Management**   | Storing sensitive information like cloud credentials in CI/CD pipelines must be done securely, and improper handling can lead to security vulnerabilities. |
+| **5. Potential for Deployment Failures** | While CI/CD automates the process, mistakes in the approval process or configuration can still lead to unwanted deployments or failures. |
 ---
 
-## Best Practices for Terraform Module CI/CD
+Here’s the content converted into a tabular form:
 
-1. **Use Remote Backends for State Management**:
-   - Store Terraform state in a remote backend like AWS S3, Terraform Cloud, or Azure Storage to ensure collaboration and state consistency.
-
-2. **Automate Testing and Validation**:
-   - Include automated checks such as `terraform validate`, `terraform fmt`, and `terraform plan` in the CI pipeline to catch issues early.
-
-3. **Implement Manual Approval for Production**:
-   - Add a manual approval step for production deployments to avoid accidental changes in production environments.
-
-4. **Version Control and Modularization**:
-   - Store each module in its own version-controlled repository to ensure changes are tracked and maintainable.
-
-5. **Handle Secrets Securely**:
-   - Store sensitive information (e.g., credentials) securely in secrets management tools like HashiCorp Vault, GitHub Secrets, or Azure Key Vault.
-
-6. **Optimize for Speed**:
-   - Avoid unnecessary overhead in your pipeline by breaking large infrastructure into smaller, reusable modules to speed up execution times.
-
+| **Best Practice**                        | **Description**                                                                                       |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **1. Use Remote Backends for State Management** | Store Terraform state in a remote backend like AWS S3, Terraform Cloud, or Azure Storage to ensure collaboration and state consistency. |
+| **2. Automate Testing and Validation**   | Include automated checks such as `terraform validate`, `terraform fmt`, and `terraform plan` in the CI pipeline to catch issues early. |
+| **3. Implement Manual Approval for Production** | Add a manual approval step for production deployments to avoid accidental changes in production environments. |
+| **4. Version Control and Modularization** | Store each module in its own version-controlled repository to ensure changes are tracked and maintainable. |
+| **5. Handle Secrets Securely**           | Store sensitive information (e.g., credentials) securely in secrets management tools like HashiCorp Vault, GitHub Secrets, or Azure Key Vault. |
+| **6. Optimize for Speed**                | Avoid unnecessary overhead in your pipeline by breaking large infrastructure into smaller, reusable modules to speed up execution times. |
 ---
 
 ## Conclusion
