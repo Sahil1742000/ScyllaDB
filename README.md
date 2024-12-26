@@ -42,7 +42,7 @@ This documentation explains the concept of Terraform Module CI/CD, why it's impo
 
 ---
 
-
+## Why Terraform Module CI/CD?
 
 | **Why Terraform Module CI/CD?**             | **Description**                                                                                       |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -56,7 +56,7 @@ This documentation explains the concept of Terraform Module CI/CD, why it's impo
 ---
 
 
-
+## When to Use Terraform Module CI/CD
 | **When to Use**                        | **Description**                                                                                       |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------|
 | **1. Frequent Changes to Infrastructure** | When your team is constantly making changes to cloud infrastructure, CI/CD ensures these changes are automatically tested, validated, and deployed. |
@@ -65,7 +65,7 @@ This documentation explains the concept of Terraform Module CI/CD, why it's impo
 | **4. Collaboration Across Teams**      | Terraform modules allow teams to work independently on different parts of infrastructure, while CI/CD ensures that the changes are tested and integrated properly. |
 | **5. Cloud Infrastructure and Automation** | When using Terraform to manage cloud infrastructure (AWS, GCP, Azure), integrating CI/CD helps automate the lifecycle of these resources. |
 ---
-
+ ## Advantages of Terraform Module CI/CD
 
 | **Advantage**                        | **Description**                                                                                       |
 |--------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ This documentation explains the concept of Terraform Module CI/CD, why it's impo
 | **6. Flexibility with Environments** | Terraform modules can be applied across various environments with CI/CD pipelines, ensuring that the infrastructure changes are customized for each environment (e.g., different instance sizes for staging vs production). |
 ---
 
-
+## Disadvantages of Terraform Module CI/CD
 
 | **Disadvantage**                          | **Description**                                                                                       |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -89,7 +89,7 @@ This documentation explains the concept of Terraform Module CI/CD, why it's impo
 ---
 
 
-
+## Best Practices for Terraform Module CI/CD
 | **Best Practice**                        | **Description**                                                                                       |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | **1. Use Remote Backends for State Management** | Store Terraform state in a remote backend like AWS S3, Terraform Cloud, or Azure Storage to ensure collaboration and state consistency. |
