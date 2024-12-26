@@ -1,6 +1,4 @@
-Here’s a sample `README.md` document for a Proof of Concept (POC) for **Terraform Module Continuous Deployment (CD)**. It includes a Table of Contents, detailed instructions, and references to help you implement CD for your Terraform module.
 
-```markdown
 # POC for Terraform Module CD (Continuous Deployment)
 
 ## Table of Contents
@@ -269,18 +267,3 @@ Once the CI/CD pipeline is set up, pushing changes to the repository will automa
 
 ---
 
-Feel free to customize this `README.md` file to match your specific use case and CI/CD tool of choice. This document serves as a guide to implementing **Continuous Deployment (CD)** with Terraform modules, ensuring a smooth and automated deployment process.
-```
-
-### Key Sections:
-- **Table of Contents**: Provides quick access to different sections of the document.
-- **Introduction**: Explains the goal of the POC and the purpose of CD in Terraform.
-- **Prerequisites**: Lists the required tools and technologies for setting up the environment.
-- **CD Pipeline Setup**: Provides detailed configurations for GitHub Actions and Jenkins pipelines.
-- **Terraform Configuration**: Describes how to configure variables and resources in Terraform.
-- **Deployment Strategy**: Explains the chosen deployment strategy (e.g., blue/green deployment).
-- **State Management**: Covers remote backend configuration for managing Terraform state.
-- **Testing and Validation**: Outlines steps for both local and CI/CD testing.
-- **References**: Provides links to relevant documentation for further reading.
-
-This `README.md` provides a comprehensive guide to implementing Continuous Deployment (CD) for Terraform modules using a CI/CD pipeline, along with best practices for deployment strategies, state management, and testing.
