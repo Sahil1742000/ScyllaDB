@@ -254,17 +254,3 @@ Once the CI pipeline is configured, you can test it by making changes to your Te
 
 ---
 
-Feel free to modify the `README.md` file as per your specific requirements and CI/CD tool setup.
-```
-
-### Key Sections:
-- **Table of Contents**: A quick reference for the various sections of the document.
-- **Introduction**: Provides an overview of the purpose and objective of the POC.
-- **Prerequisites**: Lists the software and tools required to follow the guide.
-- **CI Pipeline Setup**: Explains the configuration of GitHub Actions and Jenkins pipelines.
-- **Terraform Configuration**: Details the Terraform module structure (variables, resources).
-- **State Management**: Explains how to manage Terraform state using remote backends.
-- **Testing the Module**: Describes the testing process for Terraform modules both locally and in CI.
-- **References**: Lists external resources for further learning.
-
-This `README.md` serves as a comprehensive guide for setting up a Terraform module CI pipeline using either GitHub Actions or Jenkins, along with best practices for testing, state management, and deployment.
