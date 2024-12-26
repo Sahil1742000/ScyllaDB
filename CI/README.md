@@ -1,6 +1,5 @@
-Sure! Below is a `README.md` file format for a Proof of Concept (POC) of **Terraform Module CI**. It includes a Table of Contents and references, detailing the steps and configuration for implementing a Continuous Integration (CI) pipeline for a Terraform module.
 
-```markdown
+
 # POC for Terraform Module CI
 
 ## Table of Contents
